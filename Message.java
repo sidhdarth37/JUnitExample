@@ -6,8 +6,9 @@ public class Message {
 		return a;
 	}
 	
-	public String printWithPrefix()
+	public String printWithPrefix() throws InterruptedException
 	{
+		Thread.sleep(10000000);
 		return "Hi "+a;
 	}
 }

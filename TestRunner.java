@@ -6,11 +6,12 @@ public class TestRunner {
 
 	public static void main(String[] args) {
 		Result res=JUnitCore.runClasses(TestSuit.class);
+		System.out.println("Failures :");
 		for( Failure fail : res.getFailures())
 		{
 			System.out.println(fail.toString());
 		}
-		System.out.println(res.wasSuccessful());
+		System.out.println("Success :"+res.wasSuccessful());
 	}
 
 }
